@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const SideFeedWrapper = styled.div``;
+export const SideFeedContainer = styled.div`
+  border: 1px solid pink;
+  width: 293px;
+  height: 100px;
+`;
 
 export const SideFeedProfile = styled.div``;
 

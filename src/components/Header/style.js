@@ -13,6 +13,7 @@ export const HeaderContainer= styled.div`
     justify-content: center;
     box-sizing: border-box;
     padding: 0;
+  
 `;
 
 export const HeaderWrapper = styled.div`
