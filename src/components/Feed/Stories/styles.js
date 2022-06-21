@@ -43,6 +43,7 @@ export const StoriesContainer = styled.div`
   margin-bottom: 24px;
   padding: 14px;
   position: relative;
+  border: 1px solid ${colors.borderGray};
 `;
 
 
