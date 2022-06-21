@@ -13,6 +13,3 @@ export const Search = () =>{
         </SearchWrapper>
 }
 
-export const FocusedInput = () =>{
-    return <SearchIcon/>
-}

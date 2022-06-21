@@ -1,5 +1,40 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {colors} from "../../../palette";
+
+const buttonCss = css`
+  position: absolute;
+  top: 40px;
+  font-size: 0px;
+  border: none;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.88);
+  }
+
+  color: transparent;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    content: '>';
+    color: #100f0f;
+    font-size: 24px;
+    display: block;
+    margin-top: -4px;
+    margin-left: 2px;
+  }
+
+  &.slick-disabled{
+    display: none !important;
+  }
+  z-index: 90;
+  opacity: 1;
+`;
 
 export const StoriesContainer = styled.div`
   width: 602px;
@@ -71,6 +106,10 @@ export const SliderWrapper = styled.div`
     display: none;
   }
   & .slick-prev {
+    ${buttonCss};
+    &::before {
+      content: '<';
+    }
     position: absolute;
     left: 0;
     top: 40px;
@@ -80,6 +119,8 @@ export const SliderWrapper = styled.div`
     }
   };
   & .slick-next {
+    ${buttonCss};
+
     position: absolute;
     right: 0;
     top: 40px;
@@ -89,7 +130,4 @@ export const SliderWrapper = styled.div`
       opacity: 1;
     }
   };
-  & > slick-arrow slick-next{
-    
-  }
   `;

@@ -61,7 +61,7 @@ const storyItems = [{
     text : 'daxao'
 }]
 
-const settings = {
+export const settings = {
     dots: true,
     infinite: false,
     speed: 500,

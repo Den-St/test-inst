@@ -88,6 +88,10 @@ export const PostButton = styled.button`
       height: 24px;
       width: 24px;
       padding: 8px;
+      ${({$isLiked}) => $isLiked && `
+      fill:red;
+      `
+      }
     }
   margin: auto 0px;
   cursor: pointer;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SideFeedContainer = styled.div`
-  border: 1px solid pink;
+  border: none;
   width: 293px;
   height: 100px;
 `;
