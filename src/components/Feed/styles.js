@@ -5,5 +5,5 @@ export const FeedWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 24px auto;
-  border: 1px solid black;
+  border: none;
 `;

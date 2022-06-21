@@ -5,7 +5,6 @@ export const StoriesContainer = styled.div`
   width: 602px;
   height: 119px;
   box-sizing: border-box;
-  border: 1px solid blue;
   margin-bottom: 24px;
   padding: 14px;
   position: relative;
@@ -13,8 +12,8 @@ export const StoriesContainer = styled.div`
 
 
 export const StoriesWrapper = styled.div`
-    width: 100%;
-    height: 84px;
+  width: 100%;
+  height: 84px;
   display: flex;
   justify-content: space-between;
 `;
@@ -74,7 +73,7 @@ export const SliderWrapper = styled.div`
   & .slick-prev {
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 40px;
     opacity: 0.4;
     &:hover {
       opacity: 1;
@@ -82,11 +81,15 @@ export const SliderWrapper = styled.div`
   };
   & .slick-next {
     position: absolute;
-  right: 0;
-    top: 30px;
+    right: 0;
+    top: 40px;
     opacity: 0.4;
+    
     &:hover {
       opacity: 1;
     }
   };
+  & > slick-arrow slick-next{
+    
+  }
   `;

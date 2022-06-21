@@ -13,6 +13,8 @@ export const HeaderContainer= styled.div`
     justify-content: center;
     box-sizing: border-box;
     padding: 0;
+  background-color: white;
+  z-index: 100;
   
 `;
 
