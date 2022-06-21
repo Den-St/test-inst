@@ -59,27 +59,34 @@ export const StorySwipeButton = styled.div`
 `;
 
 export const Story = styled.button`
-    background-color: transparent;
-    border: none;
-    width: 66px;
-    height: 84px;
-    padding: 0px 4px;
-    display: block;
-    //margin: 0px 16px 0px 0px ;
-  
-  &>img{
+  background-color: transparent;
+  border: none;
+  width: 66px;
+  height: 84px;
+  padding: 0px 4px;
+  display: block;
+  //margin: 0px 16px 0px 0px ;
+
+  & > img {
     width: 56px;
     height: 56px;
     overflow: hidden;
     object-fit: cover;
     border-radius: 100%;
-    border: 1px solid palevioletred;
+    border: 2px solid #a1a1a1;
     margin-bottom: 0px;
   }
-  &>span{
+
+  & > span {
     line-height: 1px;
     font-size: 16px;
-    color : ${colors.darkGrayText};
+    color: ${colors.darkGrayText};
+  }
+
+  &:hover {
+    & > img {
+      border: 2px solid #333;
+    }
   }
 `;
 
